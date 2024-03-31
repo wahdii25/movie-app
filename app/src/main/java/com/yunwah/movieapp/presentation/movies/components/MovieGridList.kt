@@ -62,6 +62,11 @@ fun handlePagingResult(movies: LazyPagingItems<Movie>): Boolean {
             false
         }
 
+        movies.itemCount == 0 -> {
+            EmptyScreen()
+            false
+        }
+
         else -> {
             true
         }

@@ -8,7 +8,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.paging.compose.collectAsLazyPagingItems
-import com.yunwah.movieapp.presentation.common.EmptyScreen
 import com.yunwah.movieapp.presentation.movies.components.MoviesList
 import com.yunwah.movieapp.presentation.movies.components.SearchBar
 import com.yunwah.movieapp.presentation.navgraph.Route
@@ -39,17 +38,12 @@ fun MoviesScreen(
                 })
             state.movies?.let {
                 val movies = it.collectAsLazyPagingItems()
-                if (movies.itemCount > 0) {
-                    MoviesList(
-                        movies = movies,
-                        onClick = { it ->
-                            navController.navigate("${Route.MovieDetailsScreen.route}/${it.imdbID}")
-                        }
-                    )
-                } else {
-                    EmptyScreen()
-                }
-
+                MoviesList(
+                    movies = movies,
+                    onClick = { it ->
+                        navController.navigate("${Route.MovieDetailsScreen.route}/${it.imdbID}")
+                    }
+                )
             }
         }
     }
