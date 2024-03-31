@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "281242486984",
+    "project_id": "movieapp-2ad6d",
+    "storage_bucket": "movieapp-2ad6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281242486984:android:fc937121b41005c52bfdfd",
+        "android_client_info": {
+          "package_name": "com.yunwah.movieapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa_3xkbRb1L5nz8Z-TrUJBuqf7VdY1IGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
